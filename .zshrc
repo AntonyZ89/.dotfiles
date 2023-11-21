@@ -100,19 +100,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# To run GUI applications from WSL, run them on VcXsrv (XLaunch)
-export DISPLAY=:0
+. /opt/asdf-vm/asdf.sh
+. ~/.asdf/plugins/java/set-java-home.zsh
 
-# pnpm
-export PNPM_HOME="/home/antonydev/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
 # bun completions
 [ -s "/home/antonydev/.bun/_bun" ] && source "/home/antonydev/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+
+# ANDROID STUDIO
+export ANDROID_HOME="$HOME/Android/Sdk"
+export ANDROID_PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator"
+
+export PATH="$BUN_INSTALL/bin:$ANDROID_PATH:$PATH"
+
