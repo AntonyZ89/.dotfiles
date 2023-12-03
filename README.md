@@ -2,6 +2,12 @@
 
 These are my dotfiles, be careful when using them on your system. 🤣
 
+### Alacritty
+
+Theme: [Catppuccin](https://github.com/catppuccin/alacritty)
+
+Font: [Maple Font](https://github.com/subframe7536/maple-font)
+
 ### Neovim:
 
 My neovim configs can be found here: **[antonyz89/kickstart.nvim](https://github.com/antonyz89/kickstart.nvim)**

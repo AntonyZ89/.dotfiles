@@ -8,7 +8,7 @@
     "height": 50,
     "modules-left": ["clock",/*"custom/weather",*/"hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["network", "bluetooth", "temperature", /*"custom/power_profile",*/ /*"battery",*/ /* "backlight",*/ "pulseaudio", "pulseaudio#microphone", "tray"],
+    "modules-right": ["bluetooth", "temperature", /*"custom/power_profile",*/ /*"battery",*/ /* "backlight",*/ "pulseaudio", "pulseaudio#microphone", "tray"],
     "hyprland/window": {
         "separate-outputs": true,
         "format": "{}"
@@ -18,17 +18,17 @@
         "disable-scroll": true,
         // "all-outputs": true,
         "on-click": "activate",
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": [],
-            "7": [],
-            "8": [],
-            "9": [],
-            "10": []
+        "persistent-workspaces": {
+            "1": ["DP-3"],
+            "2": ["DP-3"],
+            "3": ["DP-3"],
+            "4": ["DP-3"],
+            "5": ["DP-3"],
+            "6": ["HDMI-A-1"],
+            "7": ["HDMI-A-1"],
+            "8": ["HDMI-A-1"],
+            "9": ["HDMI-A-1"],
+            "10": ["HDMI-A-1"]
         }
     },
     
